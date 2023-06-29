@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+
+import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Signin from './components/SignIn/Signin'
+import MainPage from './pages/MainPage/MainPage'
+import ChatSessionsPage from './pages/ChatSessions/ChatSessionsPage'
+import OldChatPage from './pages/OldChatPage/OldChatPage'
+import NewChatPage from './pages/NewChatPage/NewChatPage'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ background: '#F8F9FA', overflow: 'hidden' }}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" index element={<Signin />} />
+          <Route path="/" element={<MainPage />} />
+          <Route path="/chat/all" element={<ChatSessionsPage />} />
+          <Route path="/chat/old/:id" element={<OldChatPage />} />
+          <Route path="/chat/new" element={<NewChatPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

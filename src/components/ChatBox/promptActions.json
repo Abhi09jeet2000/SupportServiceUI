@@ -1,0 +1,44 @@
+{
+  "GENERATE": [
+    {
+      "name": "/summary",
+      "desc": "Get a summary of your current query"
+    },
+    {
+      "name": "/extract",
+      "desc": "Get an extract of your current query"
+    },
+    {
+      "name": "/image",
+      "desc": "Get an image of your current query"
+    }
+  ],
+  "ANALYZE": [
+    {
+      "name": "/documents",
+      "desc": "Get a document of your current query"
+    },
+    {
+      "name": "/data",
+      "desc": "Get a data of your current query"
+    },
+    {
+      "name": "/other",
+      "desc": "Get other complement of your current query"
+    }
+  ],
+  "SYNTHESIZE": [
+    {
+      "name": "/documents",
+      "desc": "Get a document of your current query"
+    },
+    {
+      "name": "/data",
+      "desc": "Get a data of your current query"
+    },
+    {
+      "name": "/av",
+      "desc": "Get a n AV of your current query"
+    }
+  ]
+}

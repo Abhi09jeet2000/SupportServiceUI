@@ -1,0 +1,5 @@
+"/"
+"/login"
+"/chat/all"
+"/chat/old/:id"
+"/chat/new"
